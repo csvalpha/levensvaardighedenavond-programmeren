@@ -21,7 +21,7 @@ class Snake:
         self.size = 0
 
     def update(self, board):
-        redraw_board = self.agent.should_redraw_board()
+        redraw_board = True
         # check input
         if not isinstance(redraw_board, bool):
             raise RuntimeError("redraw_board() must return a boolean value")
@@ -31,7 +31,7 @@ class Snake:
             return True, redraw_board
 
         # retrieve move from the agent
-        move = self.agent.get_move(board.get_copy(), self.score, self.tics_alive, self.tics_to_starve,
+        move = self.agent.get_move(board.get_copy(), self.score, self.tics_alive,
                                    self.direction, (self.x, self.y), self.body_parts)
 
         # check return value of get_move
@@ -54,7 +54,7 @@ class Snake:
 
         # check on collision with food
         if board.board[self.x][self.y] == GameObject.FOOD:
-            should_grow = self.agent.should_grow_on_food_collision()
+            should_grow = True
             if not isinstance(should_grow, bool):
                 raise RuntimeError("should_grow_on_food_collision() must return a boolean value")
             if should_grow:

@@ -1,5 +1,6 @@
 from gameobjects import GameObject
 from move import Move, Direction
+import keyboard
 
 
 class Agent:
@@ -7,7 +8,7 @@ class Agent:
     def __init__(self):
         """" Constructor of the Agent, can be used to set up variables """
 
-    def get_move(self, board, score, turns_alive, turns_to_starve, direction, head_position, body_parts):
+    def get_move(self, board, score, turns_alive, direction, head_position, body_parts):
         """This function behaves as the 'brain' of the snake. You only need to change the code in this function for
         the project. Every turn the agent needs to return a move. This move will be executed by the snake. If this
         functions fails to return a valid return (see return), the snake will die (as this confuses its tiny brain
@@ -23,14 +24,10 @@ class Agent:
         the boundaries of the array)
 
         :param score: The current score as an integer. Whenever the snake eats, the score will be increased by one.
-        When the snake tragically dies (i.e. by running its head into a wall) the score will be reset. In ohter
+        When the snake tragically dies (i.e. by running its head into a wall) the score will be reset. In other
         words, the score describes the score of the current (alive) worm.
 
         :param turns_alive: The number of turns (as integer) the current snake is alive.
-
-        :param turns_to_starve: The number of turns left alive (as integer) if the snake does not eat. If this number
-        reaches 1 and there is not eaten the next turn, the snake dies. If the value is equal to -1, then the option
-        is not enabled and the snake can not starve.
 
         :param direction: The direction the snake is currently facing. This can be either Direction.NORTH,
         Direction.SOUTH, Direction.WEST, Direction.EAST. For instance, when the snake is facing east and a move
@@ -49,25 +46,6 @@ class Agent:
         move left is made, the snake will go one block to the left and change its direction to west.
         """
         return Move.STRAIGHT
-
-    def should_redraw_board(self):
-        """
-        This function indicates whether the board should be redrawn. Not drawing to the board increases the number of
-        games that can be played in a given time. This is especially useful if you want to train you agent. The
-        function is called before the get_move function.
-
-        :return: True if the board should be redrawn, False if the board should not be redrawn.
-        """
-        return True
-
-    def should_grow_on_food_collision(self):
-        """
-        This function indicates whether the snake should grow when colliding with a food object. This function is
-        called whenever the snake collides with a food block.
-
-        :return: True if the snake should grow, False if the snake should not grow
-        """
-        return True
 
     def on_die(self, head_position, board, score, body_parts):
         """This function will be called whenever the snake dies. After its dead the snake will be reincarnated into a
