@@ -10,7 +10,7 @@ In de secties hieronder zullen we uitleggen hoe deze geïnstalleerd kunnen worde
 1. Download de installer voor jouw besturingssysteem hier: https://www.python.org/downloads/release/python-390/
     - Voor Windows, kies de 'Windows x86-64 executable installer'
     - Voor MacOS, kies de 'macOS 64-bit installer'
-2. Selecteer bij het eerste installatiescherm het vakje 'Add Python 3.9 to PATH' en volg de standaard installatie instructies
+2. Selecteer bij het eerste installatiescherm het vakje 'Add Python 3.9 to PATH' en volg de standaard installatie instructies.
 
 Voor een uitgebreide handleiding kun je deze site raadplegen: https://realpython.com/installing-python/
 
@@ -26,4 +26,4 @@ Naast Python is het handig om een programma te hebben waar we de code in kunnen 
 Als laatste moeten er nog wat extra dingen geïnstalleerd worden. Dit kan je doen door in PyCharm onderin op Terminal te klikken en het volgende in te typen: `pip install -r requirements.txt`, gevolgd door een Enter.
 
 ## Start het spel
-Om het spel te starten kunnen je met de rechtermuisknop klikken op het bestand `main.py` in het `snake` mapje -> "Run 'main'".
+Je kan nu als het goed is het spel starten door met je rechtermuisknop te klikken op het bestand `main.py` in het `snake` mapje -> "Run 'main'".
