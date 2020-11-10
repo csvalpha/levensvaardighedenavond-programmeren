@@ -18,9 +18,9 @@ Voor een uitgebreide handleiding kun je deze site raadplegen: https://realpython
 Naast Python is het handig om een programma te hebben waar we de code in kunnen schrijven. Onze voorkeur gaat uit naar PyCharm van JetBrains.
 1. Download PyCharm van: https://www.jetbrains.com/pycharm/ (De Professional versie is gratis te krijgen als je je registreert met je studentenaccount. Je kan ook de gratis Community versie installeren.)
 2. Open PyCharm na het installeren en klik op "New Project".
-3. Maak een nieuw project aan volgens de stappen op [deze site](https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html#creating-simple-project) naam "levensvaardighedenavond": 
-4. Wanneer het project geopend is, kopieer dan alle bestanden uit deze repo naar de map van dit project (dit is waarschijnlijk in `C:\Gebruikers\[Gebruikersnaam]\PyCharmProjects\levensvaardighedenavond` of `Users/[Gebruikersnaam]/PyCharmProjects\levensvaardighedenavond`)
-5. Klik nu met de rechtermuisknop op de map `snake` en klik op "Mark Directory as -> Sources Root" 
+3. Maak een nieuw project aan volgens de stappen op [deze site](https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html#creating-simple-project) naam "levensvaardighedenavond".
+4. Wanneer het project geopend is, kopieer dan alle bestanden uit deze repo naar de map van dit project (dit is waarschijnlijk in `C:\Gebruikers\[Gebruikersnaam]\PyCharmProjects\levensvaardighedenavond` of `Users/[Gebruikersnaam]/PyCharmProjects\levensvaardighedenavond`). Je kan een zipje met de bestanden downloaden door hier rechtsboven op de groene knop "Code" te klikken.
+5. Klik nu met de rechtermuisknop op de map `snake` en klik op "Mark Directory as -> Sources Root" .
 
 ## Requirements installeren
 Als laatste moeten er nog wat extra dingen geïnstalleerd worden. Dit kan je doen door in PyCharm onderin op Terminal te klikken en het volgende in te typen: `pip install -r requirements.txt`, gevolgd door een Enter.
